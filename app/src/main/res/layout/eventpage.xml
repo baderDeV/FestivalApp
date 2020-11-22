@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.HomePage">
+
+    <TextView
+        android:id="@+id/MenuEvent"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:text="Menu"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/optionsEvent"
+        android:layout_width="409dp"
+        android:layout_height="64dp"
+        android:scrollbars="vertical"
+        tools:itemCount="2"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="20dp" />
+
+    <TextView
+        android:id="@+id/listgroupoption"
+        android:layout_width="409dp"
+        android:layout_height="26dp"
+        android:text="List group"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="84dp" />
+    <ListView
+        android:id="@+id/listGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

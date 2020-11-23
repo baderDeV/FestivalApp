@@ -10,7 +10,8 @@ public class Group {
    private TypeScene typeScene;
    private boolean isplayed;
 
-    public Group(String groupeName, String description, Date dayShow, TypeScene typeScene, boolean isplayed) {
+    public Group(Long id,String groupeName, String description, Date dayShow, TypeScene typeScene, boolean isplayed) {
+        this.id=id;
         this.groupeName = groupeName;
         this.description = description;
         this.dayShow = dayShow;

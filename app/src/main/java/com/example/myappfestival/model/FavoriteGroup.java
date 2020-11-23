@@ -6,7 +6,8 @@ public class FavoriteGroup {
     private User user;
     private boolean isLiked;
 
-    public FavoriteGroup(Group group, User user, boolean isLiked) {
+    public FavoriteGroup(Long id,Group group, User user, boolean isLiked) {
+        this.id=id;
         this.group = group;
         this.user = user;
         this.isLiked = isLiked;

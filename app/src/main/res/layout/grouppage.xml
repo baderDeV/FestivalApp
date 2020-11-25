@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/groupeItem"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,14 +14,67 @@
         android:background="@color/white"
         app:srcCompat="@android:drawable/ic_btn_speak_now" />
 
-    <ListView
-        android:id="@+id/listGroup"
-        android:layout_width="wrap_content"
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="295dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/grpName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Group Name :"
+            android:enabled="false"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="395dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="description :"
+            android:enabled="false"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="295dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/scene"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="scene"
+            android:enabled="false"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="395dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dateShow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="dateShow"
+            android:enabled="false"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/like"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Like"/>
+    <Button
+        android:id="@+id/dislike"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dislike"/>
 </LinearLayout>

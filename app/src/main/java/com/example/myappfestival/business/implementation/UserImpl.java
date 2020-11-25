@@ -29,7 +29,7 @@ public class UserImpl implements UserInterface {
             throwables.printStackTrace();
             return -1;
         } finally {
-            //ConnectionDatabase.closeConnection();
+            ConnectionDatabase.closeConnection();
         }
 
         return 0;

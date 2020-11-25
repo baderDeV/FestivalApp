@@ -11,23 +11,66 @@
         android:id="@+id/MenuEvent"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:text="Menu"/>
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/optionsEvent"
-        android:layout_width="409dp"
-        android:layout_height="64dp"
-        android:scrollbars="vertical"
-        tools:itemCount="2"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="20dp" />
+        android:background="@color/design_default_color_primary"
+        android:textColor="@color/white"
+        android:text="Menu" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/optionsEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                tools:itemCount="3"/>
+
+            <Spinner
+                android:id="@+id/filterDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                tools:itemCount="3" />
+
+            <Spinner
+                android:id="@+id/filterScene"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                tools:itemCount="3" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/GO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GO"/>
+            <Button
+                android:id="@+id/Refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Refresh"/>
+        </LinearLayout>
+    </LinearLayout>
 
     <TextView
         android:id="@+id/listgroupoption"
-        android:layout_width="409dp"
+        android:layout_width="match_parent"
         android:layout_height="26dp"
+        android:background="@color/design_default_color_primary"
         android:text="List group"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="84dp" />
+        android:textColor="@color/white" />
     <ListView
         android:id="@+id/listGroup"
         android:layout_width="wrap_content"

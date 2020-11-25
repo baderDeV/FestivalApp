@@ -1,22 +1,21 @@
 package com.example.myappfestival.model;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Group {
+public class Group implements Serializable {
    private Long id;
    private String groupeName;
    private String description;
    private Date dayShow;
    private TypeScene typeScene;
-   private boolean isplayed;
 
-    public Group(Long id,String groupeName, String description, Date dayShow, TypeScene typeScene, boolean isplayed) {
+    public Group(Long id,String groupeName, String description, Date dayShow, TypeScene typeScene) {
         this.id=id;
         this.groupeName = groupeName;
         this.description = description;
         this.dayShow = dayShow;
         this.typeScene = typeScene;
-        this.isplayed = isplayed;
     }
 
     public Long getId() {
@@ -59,11 +58,15 @@ public class Group {
         this.typeScene = typeScene;
     }
 
-    public boolean isIsplayed() {
-        return isplayed;
-    }
 
-    public void setIsplayed(boolean isplayed) {
-        this.isplayed = isplayed;
+    @Override
+    public String toString() {
+        return "Group{" +
+                "id=" + id +
+                ", groupeName='" + groupeName + '\'' +
+                ", description='" + description + '\'' +
+                ", dayShow=" + dayShow +
+                ", typeScene=" + typeScene +
+                '}';
     }
 }

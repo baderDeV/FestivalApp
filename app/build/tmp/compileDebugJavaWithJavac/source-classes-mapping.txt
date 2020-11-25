@@ -1,0 +1,44 @@
+com/example/myappfestival/view/Login.java
+ com.example.myappfestival.view.Login
+ com.example.myappfestival.view.Login$1
+ com.example.myappfestival.view.Login$1$1
+ com.example.myappfestival.view.Login$2
+ com.example.myappfestival.view.Login$2$1
+com/example/myappfestival/model/TypeScene.java
+ com.example.myappfestival.model.TypeScene
+com/example/myappfestival/business/util/ConnectionDatabase.java
+ com.example.myappfestival.business.util.ConnectionDatabase
+com/example/myappfestival/view/HomePage.java
+ com.example.myappfestival.view.HomePage
+ com.example.myappfestival.view.HomePage$1
+com/example/myappfestival/model/Group.java
+ com.example.myappfestival.model.Group
+com/example/myappfestival/business/interfaces/GroupInterface.java
+ com.example.myappfestival.business.interfaces.GroupInterface
+com/example/myappfestival/model/User.java
+ com.example.myappfestival.model.User
+com/example/myappfestival/BuildConfig.java
+ com.example.myappfestival.BuildConfig
+com/example/myappfestival/model/FavoriteGroup.java
+ com.example.myappfestival.model.FavoriteGroup
+com/example/myappfestival/business/interfaces/UserInterface.java
+ com.example.myappfestival.business.interfaces.UserInterface
+com/example/myappfestival/view/ArrayGroupsAdapter.java
+ com.example.myappfestival.view.ArrayGroupsAdapter
+com/example/myappfestival/business/implementation/UserImpl.java
+ com.example.myappfestival.business.implementation.UserImpl
+com/example/myappfestival/business/implementation/GroupImpl.java
+ com.example.myappfestival.business.implementation.GroupImpl
+com/example/myappfestival/view/Event.java
+ com.example.myappfestival.view.Event
+ com.example.myappfestival.view.Event$1
+ com.example.myappfestival.view.Event$1$1
+ com.example.myappfestival.view.Event$2
+ com.example.myappfestival.view.Event$2$1
+ com.example.myappfestival.view.Event$3
+com/example/myappfestival/view/GroupDetail.java
+ com.example.myappfestival.view.GroupDetail
+ com.example.myappfestival.view.GroupDetail$1
+ com.example.myappfestival.view.GroupDetail$1$1
+ com.example.myappfestival.view.GroupDetail$2
+ com.example.myappfestival.view.GroupDetail$2$1

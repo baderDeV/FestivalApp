@@ -1,15 +1,6 @@
 create database Festival;
 use Festival;
-CREATE TABLE FavoriteGroup
-(
-  id bigint NOT NULL AUTO_INCREMENT,
-  isliked bigint,
-  id_user bigint,
-  id_group bigint,
-  CONSTRAINT PK_FavoriteGroup PRIMARY KEY (id)
-);
-
-CREATE TABLE Groups
+CREATE TABLE Festival.Groups
 (
   id bigint NOT NULL AUTO_INCREMENT,
   groupName varchar(100),
@@ -19,7 +10,7 @@ CREATE TABLE Groups
   CONSTRAINT PK_Group PRIMARY KEY (id)
 );
 
-CREATE TABLE User
+CREATE TABLE Festival.User
 (
   id bigint NOT NULL AUTO_INCREMENT,
   username varchar(100),
@@ -27,8 +18,17 @@ CREATE TABLE User
   CONSTRAINT PK_User PRIMARY KEY (id)
 );
 
+CREATE TABLE FavoriteGroup
+(
+  id bigint NOT NULL AUTO_INCREMENT,
+  isliked bigint,
+  id_user bigint,
+  id_group bigint,
+  CONSTRAINT PK_FavoriteGroup PRIMARY KEY (id)
+);
+
 ALTER TABLE FavoriteGroup ADD CONSTRAINT FK_group
-  FOREIGN KEY (id_group) REFERENCES Groups (id);
+  FOREIGN KEY (id_group) REFERENCES Festival.Groups (id);
 
 ALTER TABLE FavoriteGroup ADD CONSTRAINT FK_user
   FOREIGN KEY (id_user) REFERENCES User (id);

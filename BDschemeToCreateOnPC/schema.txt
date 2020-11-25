@@ -1,0 +1,40 @@
+CREATE TABLE FavoriteGroup
+(
+  id bigint NOT NULL AUTO_INCREMENT,
+  isliked bigint,
+  id_user bigint,
+  id_group bigint,
+  CONSTRAINT PK_FavoriteGroup PRIMARY KEY (id)
+);
+
+CREATE TABLE Groups
+(
+  id bigint NOT NULL AUTO_INCREMENT,
+  groupName varchar(100),
+  description varchar(100),
+  typeScene varchar(50),
+  dayShow TimeStamp,
+  CONSTRAINT PK_Group PRIMARY KEY (id)
+);
+
+CREATE TABLE User
+(
+  id bigint NOT NULL AUTO_INCREMENT,
+  username varchar(100),
+  password varchar(100),
+  CONSTRAINT PK_User PRIMARY KEY (id)
+);
+
+ALTER TABLE FavoriteGroup ADD CONSTRAINT FK_group
+  FOREIGN KEY (id_group) REFERENCES Groups (id);
+
+ALTER TABLE FavoriteGroup ADD CONSTRAINT FK_user
+  FOREIGN KEY (id_user) REFERENCES User (id);
+
+
+
+INSERT INTO `Groups` (groupName,description,typeScene,dayShow) VALUES ('GA','young bang','scene_acoustique','2020-11-20');
+INSERT INTO `Groups` (groupName,description,typeScene,dayShow) VALUES ('GB','young bang','scene_acoustique','2020-11-20');
+INSERT INTO `Groups` (groupName,description,typeScene,dayShow) VALUES ('GC','young bang','scene_acoustique','2020-11-20');
+INSERT INTO `Groups` (groupName,description,typeScene,dayShow) VALUES ('GD','young bang','scene_acoustique','2020-11-21');
+INSERT INTO `Groups` (groupName,description,typeScene,dayShow) VALUES ('GE','young bang','scene_acoustique','2020-11-21');
